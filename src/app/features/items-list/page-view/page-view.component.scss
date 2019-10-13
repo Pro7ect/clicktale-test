@@ -1,0 +1,16 @@
+.mat-chip-list {
+  display: block;
+  margin-left: 4px;
+}
+
+.button {
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: crosshair;
+  opacity: .5;
+  pointer-events: none;
+}

@@ -1,0 +1,15 @@
+.link-wrapper {
+  display: inline-block;
+  margin: 10px;
+
+  &.disabled {
+    cursor: not-allowed;
+
+    .button {
+      opacity: .5;
+      pointer-events: none;
+    }
+  }
+
+  cursor: pointer;
+}

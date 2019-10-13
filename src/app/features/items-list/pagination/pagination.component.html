@@ -1,0 +1,13 @@
+<div class="link-wrapper"
+     [ngClass]="{'disabled': currentPage === 1}">
+
+  <a class="button"
+     (click)="onPrevious($event)"> < </a>
+</div>
+
+<div class="link-wrapper"
+     [ngClass]="{'disabled': currentPage === numberOfPages}">
+
+  <a class="button"
+     (click)="onNext($event)"> > </a>
+</div>

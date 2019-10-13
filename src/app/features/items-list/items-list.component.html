@@ -1,0 +1,15 @@
+<form class="items-list-form" [formGroup]="filterForm">
+  <mat-form-field appearance="outline">
+
+    <mat-label>Filter</mat-label>
+
+    <input matInput formControlName="filterValue">
+  </mat-form-field>
+</form>
+
+<page-view [items]="itemsToDisplay"></page-view>
+
+<pagination [numberOfPages] = "numberOfPages"
+            [currentPage] = "currentPage"
+            (pageChange)="onPageChange($event)">
+</pagination>
